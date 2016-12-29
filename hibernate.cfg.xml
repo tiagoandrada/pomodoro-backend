@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">11VmeildUCvCJU3YU7G4JawY4y</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://ec2-107-22-182-206.compute-1.amazonaws.com:5432/d7ufc4ggnof0if?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</property>
+		<property name="hibernate.connection.username">eejgiiotahskyv</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">false</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+		<property name="hibernate.connection.requireSSL">true</property>
+		
+		
+		<mapping class="pomodoro.backend.model.Assunto" />
+		<mapping class="pomodoro.backend.model.Materia" />
+		<mapping class="pomodoro.backend.model.FlashCard"/>
+		<mapping class="pomodoro.backend.model.Ficha"/>
+		
+	</session-factory>
+</hibernate-configuration>
